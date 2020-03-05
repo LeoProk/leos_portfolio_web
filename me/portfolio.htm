@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="images/top.png">
+
+	<title>Leo's Portfolio</title>
+	<style>
+		#me {
+			height: 75px;
+			width: 70px;
+		}
+	</style>
+	<!-- Bootstrap core CSS -->
+	<link href="index_files/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="index_files/sticky-footer.css" rel="stylesheet">
+
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<script src="index_files/ie-emulation-modes-warning.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#android').show();
+			$('#ios').hide();
+			$('#other').hide();
+			$("#ios_btn").click(function () {
+				$('#ios').show();
+				$('#android').hide();
+				$('#other').hide();
+			});
+			$("#android_btn").click(function () {
+				$('#android').show();
+				$('#ios').hide();
+				$('#other').hide();
+			});
+			$("#other_btn").click(function () {
+				$('#android').hide();
+				$('#ios').hide();
+				$('#other').show();
+			});
+
+		});
+	</script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body background="images/phones.png">
+
+	<nav class="navbar navbar-fixed-top navbar-expand-md" style="background-color: black">
+		<button type="button" class="navbar-toggle btn-default glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#myNavbar"
+		 style="color:white; padding:0px">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand hidden-xs" href="#" style="padding-top:5px;padding-left:5px">
+			<img src="images/me.png" class="img-responsive img-rounded" id="me" />
+		</a>
+		<ul class="nav navbar-nav  collapse navbar-collapse" id="myNavbar">
+			<li class="nav-item active">
+				<a class="nav-link" id="android_btn" style="color:white" href="#android">Android Projects
+					<span class="sr-only">(current)</span>
+				</a>
+			</li>
+			<li class="nav-item collapse navbar-collapse">
+				<a class="nav-link" id="ios_btn" style="color:white" href="#ios">IOS Projects</a>
+			</li>
+			<!-- <li class="nav-item collapse navbar-collapse">
+				<a class="nav-link" id="other_btn" style="color:white" href="#other">Other Projects</a>
+			</li> -->
+		</ul>
+	</nav>
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8" style="background-color:white">
+		<br>
+		<br>
+		<br>
+		<img src="images/main.png" class="img-responsive img-rounded" style=" margin: 0 auto;" />
+		<br>
+		<div class="container">
+			<div class="text-center">
+				<img src="images/github.png" class="img-responsive  img-thumbnail" onclick="window.open('https://github.com/LeoProk')" style="cursor: pointer"
+				/>
+				<img src="images/linkd.png" class="img-responsive  img-thumbnail" onclick="window.open('https://il.linkedin.com/pub/leonid-prokopenko/91/410/25')"
+				 style="cursor: pointer" />
+				<img src="images/facebook.png" class="img-responsivec img-thumbnail" onclick="window.open('https://www.facebook.com/leonid.prokopenko')"
+				 style="cursor: pointer" />
+			</div>
+		</div>
+		<br>
+		<br>
+		<div id="android">
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>oTToppo for Android
+							<h2>
+								<p class="lead">oTToppo is a parking solution app that I developed using Cordova. The app helps users to find parking it was built
+									by using ionic and Firebase for server side
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=il.co.spaces.parco&hl=en')">Google Store</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj12.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>groupets for Android
+							<h2>
+								<p class="lead">groupets is a pets food group purchase app that I developed using Cordova. The app helps users to find the cheapest
+									food for their pets it was built by using ionic and Firebase for server side
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=il.co.groupets')">Google Store</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj14.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Petzy for Android
+							<h2>
+								<p class="lead">Petzy is an app that offer services for pet owner. The app is currently in developing as my side project and have
+									only the park search function but it will be expanded to include lost found list , closest pets shops and more.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=tk.leopro.petzyandroid')">Play Store</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj5.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Levavi for Android
+							<h2>
+								<p class="lead">Levavi is an app for donationing of items, I have made the app for non profit organization, users can post an item
+									for limited duration or as permanent. The app uses Firebase for the server and makes use of api like Google places,
+									rxandroid, retrofit, Google+, Google loaction.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=org.levavi.levaviapp')">Play Store</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj7.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Iq Mundiala for Android
+							<h2>
+								<p class="lead">Iq Mundiala is logic game that Atar games requested for the Mundial games. The game build with Android native and
+									using features like Facebook Api , Google Billing and JSON sending/receiving.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=com.iqmondial.iqmundial&hl=en')">Play Store</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj1.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>ControlX for Android
+							<h2>
+								<p class="lead">ControlX is an native Android app that I developed for DNA computers. The app is used by business to help them send
+									data to their workers/suppliers. The app gets the data from the server then parses it with Jsoup and display it
+									in expandable list view with options to edit specific fields call number open the location in waze and more.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=com.iqmondial.iqmundial&hl=en')">Play Store</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj6.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Chatzilla for Android
+							<h2>
+								<p class="lead">Chatzilla is an native Android app that use Parse to communicate between 2 users. The users messages are sent in
+									json format and riceived by broadcast receiver that will update the current chat session or create notification.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/Chatzilla')">GitHub</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj2.png" class="img-responsive"> </img>
+				</div>
+			</div>
+
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Portfolio for Android
+							<h2>
+								<p class="lead">The portfolio is an android app that show this website in webview. It also have option to call to my number.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/PetzyAndroid')">GitHub</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj9.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>SvetCakes for Android
+							<h2>
+								<p class="lead">The SvetCakes app is an android app that i made for cakes shop that show http://svetcakes.me/ website in webview.
+									It also have option to call to the business number.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/SvetCakesIOS')">Play Store</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj10.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Twittereader for Android
+							<h2>
+								<p class="lead">This app uses twitter4u api to search tweets by keyword and displays them in the list view. In addition the App provides
+									the option to log in to twitter account.
+									<br>
+									<br>
+									<br>
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/TwitterReader')">GitHub</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj3.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Allnews for Android
+							<h2>
+								<p class="lead">Allnews is a news app that parse the html or rss of most major newspapers using jsoup or rome. The parsed content
+									is then displayed and display it in the list view.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/TwitterReader')">APK</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj4.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+		</div>
+
+		<div id="ios">
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>oTToppo for IOS
+							<h2>
+								<p class="lead">oTToppo is a parking solution app that I developed using Cordova. The app helps users to find parking it was built
+									by using ionic and Firebase for server side
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://itunes.apple.com/us/app/ottoppo/id1448098013?ls=1&mt=8')">App Store</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj12.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>groupets for IOS
+							<h2>
+								<p class="lead">groupets is a pets food group purchase app that I developed using Cordova. The app helps users to find the cheapest
+									food for their pets it was built by using ionic and Firebase for server side
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://itunes.apple.com/us/app/%D7%92%D7%A8%D7%95%D7%A4%D7%98%D7%A1/id1447030628?ls=1&mt=8')">App Store</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj14.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Binit for IOS
+							<h2>
+								<p class="lead">Binit is an environmentally friendly app that I'm currently developing for p3ambiental using swift. The app let the
+									user to mark the location of rubbish on the map so the collection team can collect it
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://www.p3ambiental.es/')">Website</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj13.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>ControlX for IOS
+							<h2>
+								<p class="lead">ControlX is an native Swift app that I developed for DNA computers. The app is used by business to help them send
+									data to their workers/suppliers. The app gets the data from the server then parses it with Jsoup and display it
+									in expandable list view with options to edit specific fields call number open the location in waze and more.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://leoprok@bitbucket.org/leoprok/controlx-ios.git')">BitBucket</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj6.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Petzy for IOS
+							<h2>
+								<p class="lead">Petzy is an app that offer services for pet owner. The app is currently in developing as my side project and have
+									only the park search function but it will be expanded to include lost found list , closest pets shops and more.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/PetzyIOS')">GitHub</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj5.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Chatzilla for IOS
+							<h2>
+								<p class="lead">Chatzilla is an native Swift app that use Firebase to communicate between 2 users. The users messages are sent in
+									json format and riceived that will update the current chat session or create notification.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/Chatzilla-IOS')">GitHub</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj2.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Twitter and Facebook search
+							<h2>
+								<p class="lead">
+									Swift App that uses facebook and twetter api to search the query and display the results in table view.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/facebook-twiter-search')">GitHub</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj11.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Portfolio for IOS
+							<h2>
+								<p class="lead">The portfolio is an swift app that show this website in webview. It also have option to call to my number.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/Leos_PortfolioIOS')">GitHub</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj9.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>SvetCakes for IOS
+							<h2>
+								<p class="lead">SvetCakes app is an swift app that i made for cakes shop it shows http://svetcakes.me/ website in webkit. It also
+									have option to call the business phone number.
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/SvetCakesIOS')">GitHub</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj10.png" class="img-responsive"> </img>
+				</div>
+			</div>
+		</div>
+		<div id="other">
+			<div class="col-md-1">
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-8">
+					<br>
+					<br>
+					<div class="jumbotron">
+						<h3>Simple unity app
+							<h2>
+								<p class="lead">This is unity 2d app i made to try unity using C# it plays same as flappy bird
+									<p>
+										<div class="text-center">
+											<button class="btn btn-success" type="button" onclick="window.open('https://github.com/LeoProk/UnityEscapeGame')">GitHub</button>
+										</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<br>
+					<img src="images/proj8.png" class="img-responsive"> </img>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-1">
+			</div>
+		</div>
+	</div>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="index_files/ie10-viewport-bug-workaround.js"></script>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
